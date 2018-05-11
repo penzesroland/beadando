@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane prefHeight="597.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AnyagdijController">
+   <content>
+      <AnchorPane id="AnchorPane" fx:id="pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="603.0" prefWidth="642.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@/styles/scene2.css" />
+          </stylesheets>
+         <children>
+            <Button fx:id="tovabb" layoutX="515.0" layoutY="16.0" mnemonicParsing="false" onAction="#tovabbAction" text="Tovabb" />
+            <Button fx:id="vissza" layoutX="27.0" layoutY="12.0" mnemonicParsing="false" onAction="#visszaAction" text="Vissza" />
+            <Button fx:id="ujtermekgomb" layoutX="502.0" layoutY="57.0" mnemonicParsing="false" onAction="#ujtermekAction" text="Új termék" />
+            <TextField fx:id="menny" layoutX="232.0" layoutY="130.0" onAction="#writeTextField" prefHeight="25.0" prefWidth="82.0" />
+            <ComboBox fx:id="combobox" layoutX="24.0" layoutY="129.0" prefWidth="150.0" />
+            <Label fx:id="Ar" layoutX="383.0" layoutY="135.0" prefHeight="15.0" prefWidth="82.0" text="0" />
+            <Label layoutX="74.0" layoutY="106.0" text="Termék" />
+            <Label layoutX="239.0" layoutY="110.0" text="Mennyiség" />
+            <Label layoutX="382.0" layoutY="114.0" text="Ár" />
+            <Button layoutX="513.0" layoutY="130.0" mnemonicParsing="false" onAction="#ujtetelAction" text="Új Tétel" />
+            <Label layoutX="255.0" layoutY="13.0" text="Anyagdíj">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ujtermeknev" layoutX="25.0" layoutY="56.0" onAction="#setujtermeknevAction" />
+            <Label layoutX="25.0" layoutY="42.0" text="Termék neve" />
+            <Label layoutX="237.0" layoutY="41.0" text="Termék egységára" />
+            <TextField fx:id="ujtermekar" layoutX="236.0" layoutY="56.0" />
+            <Button fx:id="kesz" layoutX="515.0" layoutY="94.0" mnemonicParsing="false" onAction="#keszAction" prefHeight="25.0" prefWidth="67.0" text="Kész" />
+            <Label fx:id="hiba_label" layoutX="80.0" layoutY="87.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

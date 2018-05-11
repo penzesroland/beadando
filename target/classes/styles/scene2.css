@@ -1,0 +1,10 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+ -fx-background-color: lightblue;
+}
+.button {
+    -fx-font-weight: bold;
+}
