@@ -11,8 +11,8 @@ Ez egy olyan projekt amely egy általam készített adatbázis használatával k
 - Loggolás
 - Dokumentáció
 ## Telepítés és használat
-Klónozd le a forrásfájlokat.
-mvn package
-java -jar target/Beadando-1.0-SNAPSHOT-jar-with-dependencies.jar 
+- Klónozd le a forrásfájlokat.
+- mvn package
+- java -jar target/Beadando-1.0-SNAPSHOT-jar-with-dependencies.jar 
 ## Licence
 ### Apache License, Version 2.0
