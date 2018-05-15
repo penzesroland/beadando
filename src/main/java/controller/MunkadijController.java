@@ -72,6 +72,7 @@ public class MunkadijController implements Initializable {
             bw.write("Összesen: " + osszes + " Ft");
         } catch (IOException e) {
             e.printStackTrace();
+	    
         }
    }
     
@@ -120,7 +121,12 @@ public class MunkadijController implements Initializable {
     
      @FXML
     private void keszAction(ActionEvent event) throws IOException {
-      writeMunkadij(); 
+	try{
+      	writeMunkadij();
+	hiba_label.setText("");
+	}catch(Exception e){
+	hiba_label.setText("Hiba! Írj be terméket!");
+	} 
     }
     
     @FXML

@@ -144,7 +144,12 @@ public class AnyagdijController implements Initializable {
     }
     @FXML
     private void keszAction(ActionEvent event) throws IOException {
-    writeAnyagdij();    
+   try{
+      	writeAnyagdij();
+	hiba_label.setText("");
+	}catch(NullPointerException e){
+	hiba_label.setText("Hiba! Válassz terméket!");
+	}     
     }
     
     @FXML
